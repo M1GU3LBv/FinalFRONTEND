@@ -1,0 +1,55 @@
+.letra{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.navbar-vertical.navbar-expand-md .navbar-brand-img {
+    max-height: 3.2rem;
+}
+
+hr {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    border: 0;
+    border-top: 1px solid rgb(0 0 0 / 10%);
+    width: 14rem;
+}
+
+.navbar-vertical.navbar-expand-md .navbar-nav .nav-link.active:before {
+    top: 0rem;
+    bottom: 0rem;
+    left: 0;
+    right: auto;
+    border-left: 4px solid #4444449e;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.mt-5, .my-5 {
+    margin-top: 4.2rem!important;
+}
+
+.navbar-vertical.navbar-expand-md .navbar-brand {
+    display: none;
+}
+
+.mt--4, .my--4 {
+    margin-top: -2.1rem !important;
+}
+
+.respon{
+    display: none;
+}
+
+.navbar-vertical.navbar-expand-md .navbar-brand-img{
+    max-height: 2.5rem;
+}
+
+@media screen and(max-width:540px) {
+    .respon{
+        display: block;
+    }
+    .mt-5, .my-5 {
+        margin-top: 0rem!important;
+    }
+
+}

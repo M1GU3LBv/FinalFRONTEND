@@ -1,0 +1,148 @@
+<div class="header pb-7 pt-5 align-items-center"
+    style="min-height: 350px; background-image: url(https://munichaclacayo.gob.pe/portals/slider/imagenes/1.jpg); background-size: cover; background-position: center top;">
+    <!-- Mask -->   
+    <div class="container-fluid mt-8">
+        <div class="row">
+            <div class="col-xl-10 order-xl-2 mb-5 mb-xl-0 background-position: center top;">
+                <div class="card card-profile shadow mb-5" style="margin-top: -6rem; border-radius: 10px;">                    
+                    <div class="card-body bg-white">
+                        <div class="col-11" style="gap: 1rem;">
+                            <div class="row d-flex">
+                                <div class="col-sm-12 row">
+                                    <div class="col-sm-4 p-2">
+                                        <select class="custom-select ml--3" id="inputdropTOS">
+                                            <option selected>TIPO DE PARAMETRO</option>
+                                            <option value="1">CARGO</option>
+                                            <option value="2">ZONA</option>
+                                            <option value="3">NIVEL</option>
+                                            <option value="4">TIPO DE ORGANIZACION SOCIAL</option>                                            
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 row p-2">
+                                        <input type="text"
+                                            class="form-control form-control-sm form-control-alternative col-sm-10"
+                                            style="font-size: 16px;" placeholder="NOMBRE DEL PARAMETRO">
+                                    </div>                                   
+                                    <div class="col-sm-2 p-2">
+                                        <button type="button"
+                                            class="font-da btn btn-danger btn-sm col-sm-12">AGREGAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--8">
+    <!-- Table -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card shadow">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead style="background-color: #a5a5a5; color: white;">
+                            <tr>
+                                <th scope="col" class="text-center">#</th>
+                                <th  class="text-center ">TIPO PARAMETRO</th>
+                                <th  class="text-center ">NOMBRE DEL PARAMETRO</th>
+                                <th  class="text-center ">OPCIONES</th>
+                              </tr>
+                        </thead>
+                        <tbody style="background-color: #cbcbcb;">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Cargo</td>
+                                <td>Presidente(a)</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Tipo de Organización Social</td>
+                                <td>Presidente(a)</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Cargo</td>
+                                <td>Presidente(a)</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Cargo</td>
+                                <td>Presidente(a)</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Cargo</td>
+                                <td>Presidente(a)</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr>                                                                                 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="ModalEditar"data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: black; border: white 2px solid; border-radius: 15px;">
+            <div class="modal-header">
+                <h5 class="modal-titler" id="staticBackdropLabel" style="color: white;"><strong>EDITAR DATOS</strong></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row m-2">                    
+                    <div class="col-sm-12 mt-2" style="width: 100%;">
+                        <select class="custom-select ml--3" id="inputdropTOS">
+                            <option selected>TIPO DE PARAMETRO</option>
+                            <option value="1">CARGO</option>
+                            <option value="2">ZONA</option>
+                            <option value="3">NIVEL</option>
+                            <option value="4">TIPO DE ORGANIZACION SOCIAL</option>                                            
+                        </select>
+                    </div>
+                    <input class=" col-sm-11 mt-2" type="text" placeholder="NOMBRE DEL PARAMETRO">
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-secondary" style="background-color: red;" data-dismiss="modal">CANCELAR</button>
+                <button type="button" class="btn btn-success">ACEPTAR</button>
+            </div>
+        </div>
+    </div>
+</div>

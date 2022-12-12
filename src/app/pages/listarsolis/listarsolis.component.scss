@@ -1,0 +1,270 @@
+$titulo: 30px;
+$cuadro1: 60px;
+$cuadro2: 60px;
+$letra: 14px;
+$flecha: 10px;
+
+.flecha {
+    width: $titulo;
+    height: $flecha;
+}
+
+
+.tab-content {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 0.25rem;
+    position: relative;
+    transition: all 0.15s ease;
+    box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%) !important;
+}
+
+.imagenes {
+    width: $cuadro1;
+    height: $cuadro1;
+}
+
+
+h1 {
+    line-height: 1.1;
+}
+
+.imagenes2 {
+    height: $cuadro2;
+}
+
+.titulo {
+    font-size: $titulo;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.fondo {
+    background-image: url(https://img.freepik.com/vector-premium/fondo-verde-geometrico-moderno_75555-67.jpg?w=740);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn-primary {
+    color: #000;
+    background: #ebf12c;
+    border-color: #ebf12c;
+}
+
+.btn-primary:hover {
+    background-color: #d7dd29;
+    border-color: #d7dd29;
+}
+
+
+.btn-secondary {
+    color: #ffffff;
+    background-color: #39b530;
+    border-color:  #39b530;
+}
+
+.btn-secondary:hover {
+    background-color: #38a530;
+    border-color: #38a530;
+}
+
+.simple {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.btn:not(:last-child) {
+    margin-right: 0rem;
+}
+
+.letra2 {
+    font-family: sans-serif;
+    font-size: $letra;
+}
+
+.mt-4 {
+    margin-top: 3rem !important;
+}
+
+.queestop {
+    margin-top: 5rem !important;
+}
+
+.wasa {
+    margin-top: -5rem !important;
+    animation-delay: .3s;
+    animation: anime 1s infinite ease-in-out alternate;
+    -webkit-animation: anime 1s infinite ease-in-out alternate;
+}
+@keyframes anime {
+    100% {
+      transform: translateY(20px);
+      -webkit-transform: translateY(20px);
+      -moz-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      -o-transform: translateY(20px);
+    
+    }
+}
+
+.letra {
+    font-family: sans-serif;
+}
+
+.fs-4 {
+    font-size: 0.6rem!important;
+}
+
+.transparent {
+    z-index: 100;
+}
+
+.procesos {
+    background-color: #000000b6;
+}
+
+.col-lg-10 {
+    max-width: 25%;
+}
+
+.text-success {
+    color: #39b530 !important;
+}
+
+
+.btn {
+    padding: 0.4rem 1rem;
+    border: 0px solid transparent;
+    border-radius: 0.4rem;
+}
+
+.mb-lg-5,
+.my-lg-5 {
+    margin-bottom: 7rem !important;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 10rem !important;
+}
+
+.personas {
+    animation-name: girarb;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-block;
+}
+
+@keyframes girarb {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.like {
+    margin-top: 1.7rem;
+}
+
+$derecha: 7px;
+$ancho: 45px;
+$ancho2: 35px;
+$enca: 14px;
+
+.modal-content {
+    width: 70%;
+}
+
+.enca {
+    font-size: $enca;
+}
+
+.logo1 {
+    height: $ancho;
+}
+
+.logo2 {
+    margin-left: $derecha;
+    height: $ancho2;
+}
+
+$ancho3:40px;
+$ancho4:55px;
+.logo {
+    height: $ancho3;
+}
+
+.logo3 {
+    margin-left: $derecha;
+    height: $ancho4;
+}
+
+
+.headroom--not-top {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #000000b6 !important;
+    box-shadow: 0 1px 10px rgb(130 130 134 / 10%);
+}
+
+.navbar-transparent {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.table th,
+.table td {
+    padding: 0rem;
+
+}
+
+hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.9rem;
+    border: 0;
+    border-top: 0.0625rem solid rgba(0, 0, 0, 0);
+}
+
+.section2 {
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.section-lg {
+    padding-bottom: 1rem;
+}
+
+
+$padding: 10px 15px;
+$border: 15px;
+$top: -55px;
+
+.opciones:hover {
+    color: #000;
+    padding: $padding;
+    background-color: white;
+    border-radius: $border;
+}
+
+.align-items-center {
+    margin-top: $top;
+}
+
+.ml-4{
+    margin-left: 58rem !important;
+}
+
+.letra3{
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+

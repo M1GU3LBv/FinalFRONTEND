@@ -1,0 +1,279 @@
+
+
+  <div class="header pb-7 pt-5 pt-lg-8 d-flex align-items-center"
+    style="min-height: 250px; background-image: url(https://munichaclacayo.gob.pe/portals/slider/imagenes/1.jpg); background-size: cover;">
+    <!-- Mask -->
+    <div style="margin-top:-65px;" class="" >
+      <div class="col-sm-15">
+        <div
+          style=" align-items: center; display: flex; justify-content: center; margin-top: 15px; background-color:#4cab39c7; height: 90%">
+          <h5 style="margin-top: 10px; color: white; font-family: sans-serif; text-align: center; "><strong>GENERAR RESOLUCIONES</strong>
+          </h5>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="container" style="margin-top: 70px;">
+          <div class="header-body">
+            <div class="container-sm">
+
+              <div class="row ">
+                <div class="col-sm-12" >
+                  <div class="">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <select
+                          style="border:1px rgb(231, 230, 230) solid; border-radius: 4px;"
+                          class="form-select form-select col-sm-3 ml-5" aria-label=".form-select-sm example">
+                          <option selected> Seleccionar</option>
+                          <option value="1">Representante J.D.</option>
+                          <option value="2">Nuevo registro</option>
+                          <option value="2">Actualización</option>
+                          <option value="3">Con I. Técnico</option>
+                          <option value="3">Sin I. Técnico</option>
+                        </select>
+                        <button style="background-color: gold;" type="button" class="btn btn ml-1">FILTRAR</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-8">
+                  <div>
+                    <div class="form-group">
+                      <div class="input-group col-sm-8">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                        <input style="height: 50%;" class="form-control" placeholder=" Buscar"
+                          type="text">
+                        <button style="margin: -3px; height: 40px;" type="button"
+                          class="ml-2 btn btn-secondary">BUSCAR</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <button style="background-color: gold; font-size: 80%;"
+                    type="button" class="btn btn" data-toggle="modal" data-target="#avisarorg">GENERAR NUEVA
+                    ORGANIZACIÓN SOCIAL</button>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+
+<!-- Page content -->
+<div class="card">
+  <div class="card-body">
+
+    <!-- Page content -->
+    <div class="container-fluid mt--7">
+      <!-- Table -->
+      <div class="row">
+        <div class="col">
+          <div class="card shadow">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead style="background-color: #92D050;">
+                  <tr class="text-light">
+                    <th scope="col"><strong>REPRESENTANTE DE LA J.D</strong></th>
+                    <th scope="col"><strong>ORG. SOCIAL</strong></th>
+                    <th scope="col"><strong>TIPO</strong></th>
+                    <th scope="col"><strong>DETALLE</strong></th>
+                    <th scope="col"><strong>Nº EXPEDIENTE</strong></th>
+                    <th scope="col"><strong>INFORME TÉCNICO</strong></th>
+                    <th scope="col"><strong>RESOLUCIÓN DE RECONOCIMIENTO</strong></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Elias Manrique Arranco
+                    </th>
+                    <td>Ayuda mutua</td>
+                    <td>Local</td>
+                    <td>
+                      <button type="button" routerLinkActive="active" [routerLink]="['/detallesoli']"
+                        style="border: white solid; background-color: white;">
+                        <i style="font-size: 160%;" class="fa-solid fa-eye"></i></button>
+                    </td>
+                    <td>9JIT5967</td>
+                    <td>
+                      <i class="fa-solid fa-eye" style="margin-left: 40px; margin-top: 5px; font-size: 160%;"></i>
+                    </td>
+                    <td>
+                      <div style="display: flex; justify-content: center ; align-items: center; text-align: center;">
+                        <i class="fa-solid fa-eye" style="font-size: 160%; margin-right: 15px;"></i>
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">María Antonia Nieves
+                    </th>
+                    <td>El poder de la Fe</td>
+                    <td>Funcional</td>
+                    <td>
+                      <button type="button" routerLinkActive="active" [routerLink]="['/detallesoli']"
+                        style="border: white solid; background-color: white;">
+                        <i style="font-size: 160%;" class="fa-solid fa-eye"></i></button>
+                    </td>
+                    <td>D934JI40</td>
+                    <td>
+                      <i class="fa-solid fa-eye" style="margin-left: 40px; margin-top: 5px; font-size: 160%;"></i>
+                    </td>
+                    <td>
+                      <div style="display: flex; justify-content: center ; align-items: center; text-align: center;">
+                        <i class="fa-solid fa-eye" style="font-size: 160%; margin-right: 15px;"></i>
+
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Maickol Rivera Arquiso
+                    </th>
+                    <td>Mutualidad imparable</td>
+                    <td>Organizacional</td>
+                    <td>
+                      <button type="button" routerLinkActive="active" [routerLink]="['/detallesoli']"
+                        style="border: white solid; background-color: white;">
+                        <i style="font-size: 160%;" class="fa-solid fa-eye"></i></button>
+                    </td>
+                    <td>E903OPY0</td>
+                    <td>
+                      <i class="fa-solid fa-eye" style="margin-left: 40px; margin-top: 5px; font-size: 160%;"></i>
+                    </td>
+                    <td>
+                      <div style="display: flex; margin-top: -10px;">
+                        <i class="fa-solid fa-eye" style="font-size: 160%; margin-right: 15px; margin-top: 20px;"></i>
+                        <form>
+                          <div class="form-group">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                          </div>
+                          <button style="background-color: gold; margin-top: -16px; margin-left: 6px; font-size: 70%;" type="button"
+                          class="btn btn">SUBIR ARCHIVO</button>
+                      
+                        </form>
+
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Miguel Arrancon Llanos
+                    </th>
+                    <td>Cada día mejor</td>
+                    <td>Territorial</td>
+                    <td>
+                      <button type="button" routerLinkActive="active" [routerLink]="['/detallesoli']"
+                        style="border: white solid; background-color: white;">
+                        <i style="font-size: 160%;" class="fa-solid fa-eye"></i></button>
+                    </td>
+                    <td>3JOR0PO9</td>
+                    <td>
+                      <i class="fa-solid fa-eye" style="margin-left: 40px; margin-top: 5px; font-size: 160%;"></i>
+                    </td>
+                    <td>
+                      <div style="display: flex; margin-top: -10px;">
+                        <i class="fa-solid fa-eye" style="font-size: 160%; margin-right: 15px; margin-top: 20px;"></i>
+                        <form>
+                          <div class="form-group">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                          </div>
+                          <button style="background-color: gold; margin-top: -16px; margin-left: 6px; font-size: 70%;" type="button"
+                          class="btn btn">SUBIR ARCHIVO</button>
+                      
+                        </form>
+
+                        </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Cristiano Marlon Riberasa
+                    </th>
+                    <td>Unidos todo se puede</td>
+                    <td>Territorial</td>
+                    <td>
+                      <button type="button" routerLinkActive="active" [routerLink]="['/detallesoli']"
+                        style="border: white solid; background-color: white;">
+                        <i style="font-size: 160%;" class="fa-solid fa-eye"></i></button>
+                    </td>
+                    <td>3J9E04KH</td>
+                    <td>
+                      <i class="fa-solid fa-eye" style="margin-left: 40px; margin-top: 5px; font-size: 160%;"></i>
+                    </td>
+                    <td>
+                      <div style="display: flex; margin-top: -10px;">
+                        <i class="fa-solid fa-eye" style="font-size: 160%; margin-right: 15px; margin-top: 20px;"></i>
+                        <form>
+                          <div class="form-group">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                          </div>
+                          <button style="background-color: gold; margin-top: -16px; margin-left: 6px; font-size: 70%;" type="button"
+                          class="btn btn">SUBIR ARCHIVO</button>
+                      
+                        </form>
+
+                        </div>
+                    </td>
+                  </tr>
+                  
+
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 7%;" data-backdrop="static" data-keyboard="false" class="modal fade" id="avisarorg"
+  tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div style="opacity: 90%; background-color: black ; border:2px white solid; border-radius: 20px;"
+      class="modal-content">
+      <div class="modal-header" style="color: gold; text-align: center;">
+        <strong>ANTES DE GENERAR LA NUEVA ORGANIZACIÓN, 
+          SE SOLICITA QUE NOTIFIQUE AL USUARIO SOBRE 
+          SU REGISTRO EXITOSO</strong>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label text-light">CORREO ELECTRÓNICO:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label text-light">MENSAJE:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+            <div class="form-group">
+              <input type="file" class="form-control-file bg-light" id="exampleFormControlFile1" >
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-success" data-dismiss="modal">Enviar Correo</button>
+      </div>
+    </div>
+
+  </div>
+</div>

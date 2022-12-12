@@ -1,0 +1,35 @@
+<nav class="letra navbar navbar-top navbar-expand-md sticky-top bg-default shadow" id="navbar-main">
+  <div class="container-fluid">
+    <!-- Brand -->
+    <a class="navbar-brand pt-0">
+      <img src="./assets/img/iconos/logo_menu.png" style="width:10rem">
+    </a>
+   <!-- <p class="font-weight-bold h6 mb-0 text-white text-uppercase d-none d-lg-inline-block" >{{getTitle()}}</p>-->
+    <!-- User -->
+    <ul class="navbar-nav align-items-center d-none d-md-flex">
+      <li class="nav-item" ngbDropdown placement="bottom-right">
+        <a class="nav-link pr-0" role="button" ngbDropdownToggle>
+          <div class="media align-items-center">
+            <span class="avatar avatar-sm rounded-circle">
+              <img alt="Image placeholder" src="./assets/img/theme/team-1-800x800.jpg">
+            </span>
+            <div class="media-body ml-2 d-lg-block">
+              <span class="mb-0 text-sm font-weight-bold text-white">{{nombreUsuario}}</span>
+            </div>
+          </div>
+        </a>
+        <div class="dropdown-menu-arrow dropdown-menu-right" ngbDropdownMenu>  
+          <a routerLinkActive="active" [routerLink]="['/mi-perfil']" class="dropdown-item">
+            <i class="fa-solid fa-user"></i>
+            <span>Mi perfil</span>
+          </a> 
+          <div class="dropdown-divider"></div>
+          <a href="#!" class="dropdown-item" *ngIf="isLogged" (click)="onLogOut()" >
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Cerrar sesión</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>

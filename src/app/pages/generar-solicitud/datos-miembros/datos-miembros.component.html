@@ -1,0 +1,194 @@
+<div class="header pb-7 pt-5 align-items-center"
+    style="min-height: 350px; background-image: url(https://munichaclacayo.gob.pe/portals/slider/imagenes/1.jpg); background-size: cover; background-position: center top;">
+    <!-- Mask -->
+    <div class=" container mb-8 row mx-auto">
+        <h1 class="text-center  col-sm-4"
+            style="border: 2px black solid; background-color: white; font-size: 22px; border-radius: 10px; font-family: sans-serif; color: black;">
+            <strong>NOMINA DE MIEMBROS</strong>
+        </h1>
+    </div>
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-xl-10 order-xl-2 mb-5 mb-xl-0 background-position: center top;">
+                <div class="card card-profile shadow mb-5" style="margin-top: -6rem; border-radius: 10px;">
+                    <div class="row justify-content-center">
+                        <span style="font-size: 5rem;"><i class="fa-solid fa-users"></i></span>
+                    </div>
+                    <div class="card-body bg-white">
+                        <div class="col-11" style="gap: 1rem;">
+                            <div class="row d-flex">
+                                <div class="col-sm-12 row">
+                                    <div class="p-2 ">
+                                        <strong>DATOS:</strong>
+                                    </div>
+                                    <div class="p-1">
+                                        <input type="text"
+                                            class="form-control form-control-sm form-control-alternative "
+                                            style="font-size: 16px; width: 6rem;" placeholder="DNI">
+                                    </div>
+                                    <div class="p-1">
+                                        <input type="text" class="form-control form-control-sm form-control-alternative"
+                                            style="font-size: 16px; width: 16rem;" placeholder="DIRECCION">
+                                    </div>
+                                    <div class="p-1">
+                                        <button type="button"
+                                            class="font-weight-bold btn btn-success btn-sm col-sm-12">AGREGAR</button>
+                                    </div>
+                                    <div class="p-1">
+                                        <button type="button"
+                                            class="font-weight-bold btn btn-success btn-sm col-sm-11 ml-3"
+                                            style="background-color: #f9d76f; color: black;">IMPORTAR
+                                            EXCEL</button>
+                                    </div>
+                                    <div  class="text-center">
+                                        <div  class="col-md-12">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="row d-flex justify-content-center">
+                                <button type="button" class="font-weight-bold m-2 btn btn-success btn-sm "
+                                    style="background-color: #9e9e9e; color: black;" routerLinkActive="active"
+                                    [routerLink]="['/datos-jd']">REGRESAR</button>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <button type="button" class="font-weight-bold m-2 btn btn-success btn-sm"
+                                    style="background-color: #9e9e9e; color: black;" routerLinkActive="active"
+                                    [routerLink]="['/r-documentos']">CONTINUAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--8">
+    <!-- Table -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card shadow">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead style="background-color: #a5a5a5; color: white;">
+                            <tr>
+                                <th class="text-center" scope="col">NOMBRES</th>
+                                <th class="text-center" scope="col">APELLIDO PATERNO</th>
+                                <th class="text-center" scope="col">APELLIDO MATERNO</th>
+                                <th class="text-center" scope="col">DIRECCION</th>
+                                <th class="text-center" scope="col">DNI</th>
+                                <th class="text-center" scope="col">OPCIONES</th>
+                            </tr>
+                        </thead>
+                        <tbody style="background-color: #cbcbcb;">
+                            <tr>
+                                <td>Miguel Angel</td>
+                                <td>Trejo</td>
+                                <td>Guitiérrez</td>
+                                <td>AV.LosMartires</td>
+                                <td>75846321</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr>  
+                            <tr>
+                                <td>Miguel Angel</td>
+                                <td>Trejo</td>
+                                <td>Guitiérrez</td>
+                                <td>AV.LosMartires</td>
+                                <td>75846321</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>Miguel Angel</td>
+                                <td>Trejo</td>
+                                <td>Guitiérrez</td>
+                                <td>AV.LosMartires</td>
+                                <td>75846321</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>Miguel Angel</td>
+                                <td>Trejo</td>
+                                <td>Guitiérrez</td>
+                                <td>AV.LosMartires</td>
+                                <td>75846321</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <td>Miguel Angel</td>
+                                <td>Trejo</td>
+                                <td>Guitiérrez</td>
+                                <td>AV.LosMartires</td>
+                                <td>75846321</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr>   
+                            <tr>
+                                <td>Miguel Angel</td>
+                                <td>Trejo</td>
+                                <td>Guitiérrez</td>
+                                <td>AV.LosMartires</td>
+                                <td>75846321</td>
+                                <td class="d-flex justify-content-center">
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
+                                    </a>
+                                    <i class="fa-solid fa-trash-can m-2"></i>
+                                </td>
+                            </tr>                                                     
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="ModalEditar"data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: black; border: white 2px solid; border-radius: 15px;">
+            <div class="modal-header">
+                <h5 class="modal-titler" id="staticBackdropLabel" style="color: white;"><strong>EDITAR DATOS</strong></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row m-2">                    
+                    <input class=" col-sm-12 mt-2" type="text" placeholder="DNI">
+                    <input class=" col-sm-12 mt-2" type="text" placeholder="DIRECCION">
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-secondary" style="background-color: red;" data-dismiss="modal">CANCELAR</button>
+                <button type="button" class="btn btn-success">ACEPTAR</button>
+            </div>
+        </div>
+    </div>
+</div>

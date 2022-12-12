@@ -1,0 +1,53 @@
+.procesos {
+    background-color: #333333 !important;
+}
+
+.letra {
+    font-family: sans-serif;
+}
+
+.letra2 {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.cartas{
+    width: 100%;
+}
+
+.cartas2{
+    width: 100%;
+}
+.cartas3{
+    display: flex;
+}
+
+.mt--8, .my--8 {
+    margin-top: -12rem !important;
+}
+
+.card{
+    border-radius: 1.2rem;
+}
+
+@media screen and(max-width:950px) {
+    .cartas2{
+        width: 90%;
+    }
+    .cartas3{
+        display: grid;
+    }
+
+}
+
+@media screen and(max-width:540px) {
+    .cartas2{
+        width: 90%;
+    }
+    .cartas3{
+        display: grid;
+    }
+}

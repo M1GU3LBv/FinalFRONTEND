@@ -1,0 +1,169 @@
+<div class="header pb-7 pt-5 align-items-center"
+    style="min-height: 350px; background-image: url(https://munichaclacayo.gob.pe/portals/slider/imagenes/1.jpg); background-size: cover; background-position: center top;">
+    <!-- Mask -->
+    <div class="container-fluid mt-8">
+        <div class="row">
+            <div class="col-xl-10 order-xl-2 mb-5 mb-xl-0 background-position: center top;">
+                <div class="card card-profile shadow mb-5" style="margin-top: -6rem; border-radius: 10px;">
+                    <div class="card-body bg-white">
+                        <div class="col-11" style="gap: 1rem;">
+                            <div class="row d-flex">
+                                <div class="col-sm-12 row">
+                                    <div class="col-sm-8 row">
+                                        <div class="col-sm-8 p-2">
+                                            <select class="custom-select ml--3" id="inputdropTOS">
+                                                <option selected>SELECCIONAR ROL</option>
+                                                <option value="1">USUARIO</option>
+                                                <option value="2">SUBGERENCIA PV</option>
+                                                <option value="3">GERENCIA DS</option>
+                                                <option value="4">SUBGERENCIA MP</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-sm-4 p-2">
+                                            <button type="button"
+                                                class="font-weight-bold btn btn-success btn-sm col-sm-11 ml-3"
+                                                style="background-color: #f9d76f; color: black;">FILTRAR</button>
+                                        </div>
+                                        <div class="col-sm-9 row p-2">
+                                            <input type="text"
+                                                class="form-control form-control-sm form-control-alternative col-sm-10"
+                                                style="font-size: 16px;" placeholder="NOMBRE DEL PARAMETRO">
+                                        </div>
+                                        <div class="col-sm-3 mr-4 p2">
+                                            <button type="button"
+                                                class="font-weight-bold btn btn-success btn-sm col-sm-11 ml-3">BUSCAR</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 justify-content-center p-2">
+                                        <button type="button"
+                                            class="font-da btn btn-danger btn-sm col-sm-12 mt-4">AGREGAR</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page content -->
+<div class="container-fluid mt--8">
+    <!-- Table -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card shadow">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead style="background-color: #a5a5a5; color: white;">
+                            <tr>
+                                <th class="text-center ">NOMBRE APELLIDO</th>
+                                <th class="text-center ">ROLES</th>
+                            </tr>
+                        </thead>
+                        <tbody style="background-color: #cbcbcb;">
+                            <tr>
+                                <td>Miguel Angel Trejo Gutiérrez</td>
+                                <td>
+                                    <strong>USUARIO</strong>
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen ml-3" style="color: black;"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Miguel Angel Trejo Gutiérrez</td>
+                                <td>
+                                    <strong>GERENCIA DS</strong>
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen ml-3" style="color: black;"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Miguel Angel Trejo Gutiérrez</td>
+                                <td>
+                                    <strong>SUBGERENCIA MP</strong>
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen ml-3" style="color: black;"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Miguel Angel Trejo Gutiérrez</td>
+                                <td>
+                                    <strong>GERENCIA DS</strong>
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen ml-3" style="color: black;"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Miguel Angel Trejo Gutiérrez</td>
+                                <td>
+                                    <strong>USUARIO</strong>
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen ml-3" style="color: black;"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Miguel Angel Trejo Gutiérrez</td>
+                                <td>
+                                    <strong>SUBGERENCIA</strong>
+                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
+                                        <i class="fa-solid fa-pen ml-3" style="color: black;"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="ModalEditar" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: black; border: white 2px solid; border-radius: 15px;">
+            <div class="modal-header">
+                <h5 class="modal-titler" id="staticBackdropLabel" style="color: white;"><strong>EDITAR ROLES</strong>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-sm-12">
+                    <select class="custom-select" id="inputdropTOS">
+                        <option selected>SELECCIONAR ROL</option>
+                        <option value="1">USUARIO</option>
+                        <option value="2">SUBGERENCIA PV</option>
+                        <option value="3">GERENCIA DS</option>
+                        <option value="4">SUBGERENCIA MP</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-secondary" style="background-color: red;"
+                    data-dismiss="modal">CANCELAR</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" data-toggle="modal" data-target="#ModalAlerta">ACEPTAR</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="ModalAlerta" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color: black; border: white 2px solid; border-radius: 15px;">
+            <div class="modal-body text-center font-weight-bold">
+               <strong><h3 style="color: white;">¿DESEA GUARDAR LOS CAMBIOS?</h3></strong>               
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-secondary" style="background-color: red;" data-dismiss="modal">CANCELAR</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">ACEPTAR</button>
+            </div>
+        </div>
+    </div>
+</div>

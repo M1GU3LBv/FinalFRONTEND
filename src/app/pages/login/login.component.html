@@ -1,0 +1,25 @@
+<div class="letra d-flex justify-content-center align-items-center" style="width: auto;height: 100vh; background-image: url(https://munichaclacayo.gob.pe/portals/slider/imagenes/3.jpg); background-size: cover; background-position: center center;">
+  <div class="card shadow" style="width: 19rem;">
+    <form class="m-4" role="form" #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+      <div class="align-items-center d-flex justify-content-center" >
+        <img [routerLink]="['/principal']" style="width:14rem" src="./assets/img/iconos/logo_inicio.png">
+      </div>
+      <div class="form-floating mb-3 mt-2">
+        <label for="floatingInput"><b> DNI:</b></label>
+        <input name="nombreUsuario" id="nombreUsuario"  [(ngModel)]="nombreUsuario" required  type="text" class="form-control form-control-sm"  placeholder="N° 00000000">
+      </div>
+      <div class="form-floating mb-3">
+        <label for="floatingPassword"><b>Contraseña:</b></label>
+        <input name="password" id="password" [(ngModel)]="password" required type="password" class="form-control form-control-sm" id="floatingPassword" placeholder="Contraseña">
+      </div>
+      <div class="text-center align-items-center d-flex justify-content-center">
+        <a [routerLink]="['/recuperarcontra']">¿Olvidastes tu contraseña?</a>
+      </div>
+      <div class="d-grid gap-2 mt-3">
+        <button [disabled]="!f.valid"class="btn btn-success btn-sm col-lg-12 "><b>INICIAR SESIÓN</b></button>
+        <button [routerLink]="['/register']" type="button" class="btn btn-warning btn-sm text-white col-lg-12 mt-2"><b>CREA TU CUENTA</b></button>
+      </div>
+    </form>
+  </div>
+</div>
+

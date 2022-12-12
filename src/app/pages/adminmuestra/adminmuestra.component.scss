@@ -1,0 +1,53 @@
+.bg-default {
+    background: #333333 !important;
+}
+
+.card{
+    border-radius: 1.2rem;
+}
+
+.cartas{
+    width: 30%;
+}
+
+.cartas2{
+    width: 30%;
+}
+.cartas3{
+    display: flex;
+}
+
+.procesos {
+    background-color: #333333 !important;
+}
+
+.imagenes{
+    width: 8rem;
+}
+
+
+@media screen and(max-width:950px) {
+    .cartas2{
+        width: 90%;
+    }
+    .cartas{
+        width: 50%;
+    }
+}
+
+@media screen and(max-width:540px) {
+    .cartas2{
+        width: 90%;
+    }
+    .cartas3{
+        display: grid;
+    }
+    .cartas{
+    width: 58%;
+}
+.imagenes{
+    width: 10.5rem;
+}
+
+
+}

@@ -1,0 +1,137 @@
+.letra {
+    font-family: sans-serif;
+}
+
+.letra2 {
+    font-size: 14px;
+}
+
+.navbar-transparent {
+    z-index: 1050;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 0.5rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.text-success {
+    color: #39b530 !important;
+}
+
+.procesos {
+    background-color: #333333 !important;
+}
+
+.navbar {
+    padding: 0.1rem 1rem;
+}
+
+.opc {
+    color: white;
+}
+
+.navbar-collapse .collapse-brand img {
+    height: 40px;
+}
+
+footer {
+    padding: 0rem 0;
+}
+
+@media screen and(max-width:950px) {
+    .buscar {
+        width: 30%;
+    }
+
+    .buscar2 {
+        width: 20rem;
+    }
+
+    .excelpdf {
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .section3 {
+        position: relative;
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+    }
+
+    .ruos {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .footer {
+        background: #f7fafc;
+        padding: 0.5rem 0;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and(max-width:540px) {
+    .buscar2 {
+        width: 60%;
+    }
+
+    .buscar {
+        width: 30%;
+    }
+
+    .excelpdf {
+        flex: 0 0 16.666667%;
+        max-width: 25%;
+    }
+
+    .ruos {
+        flex: none;
+        max-width: none;
+    }
+
+    .imagenes {
+        width: 140px;
+        height: 140px;
+    }
+
+    .mb-5 {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .muni {
+        justify-content: center !important;
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    .redes {
+        position: relative;
+        width: 30%;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    .iconos {
+        justify-content: center !important;
+    }
+
+    .letrafinal {
+        margin-top: 0rem !important;
+    }
+
+    .sesionmenu {
+        display: block;
+    }
+
+    .opc {
+        color: #000
+    }
+}
