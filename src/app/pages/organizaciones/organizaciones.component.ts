@@ -22,10 +22,15 @@ export class OrganizacionesComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+
+
     this.organizacionesService.organizaciones().subscribe(
       (Response)=>{
        
         this.repos = Response; 
+
+       
       }
      );
 
