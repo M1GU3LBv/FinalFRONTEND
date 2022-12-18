@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class OrganizacionesService{
  
- url = 'http://10.147.19.229:8080/api/organizaciones';
+ url = 'http://10.147.19.229:8080/organizaciones/listar';
 
   constructor(private httpClient: HttpClient) {}
     

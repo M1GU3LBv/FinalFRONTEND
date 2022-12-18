@@ -27,6 +27,7 @@ export class OrganizacionesComponent implements OnInit {
 
     this.organizacionesService.organizaciones().subscribe(
       (Response)=>{
+        console.log(Response)
        
         this.repos = Response; 
 
