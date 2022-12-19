@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Parametros } from 'src/app/models/parametros';
 import { datosService } from 'src/app/service/datosSolicitud.service';
+import { ParametroService } from 'src/app/service/ParametroNuevo.service';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -16,7 +17,7 @@ export class MantenerParametroComponent implements OnInit {
   
     tipoparametro: string;
     nombre: string;
-    constructor(private service : datosService) { }
+    constructor(private service : datosService, private parametroservice: ParametroService) { }
 
     ngOnInit(): void {
 
@@ -32,9 +33,9 @@ export class MantenerParametroComponent implements OnInit {
     add(): void {
 
     
-        const parametros = new Parametros(this.tipoparametro,this.nombre);
-        console.log(parametros)
-           this.service.save(parametros).subscribe(
+this.parametros = new Parametros(this.tipoparametro,this.nombre);
+       
+           this.parametroservice.new(this.parametros).subscribe(
              data => {
                     Swal.fire(
                     'Parametro: '+this.parametros.tipoparametro + this.parametros.nombre,
@@ -43,7 +44,7 @@ export class MantenerParametroComponent implements OnInit {
                   )
              }, err => {
         
-              console.log (err.message);
+              console.log (err);
       
       
               

@@ -63,9 +63,10 @@ export class RegisterComponent implements OnInit {
     this.personareniec = new Personareniec(this.myNameElem.nativeElement.value);
        this.reniecservice.persona(this.personareniec).subscribe(
         (Response)=>{
+         
          this.nombres_pers = Response.nombres;
-         this.apellido_pat =Response.apellidoMaterno;
-         this.apellido_mat = Response.apellidoPaterno;
+         this.apellido_pat =Response.apellidoPaterno;
+         this.apellido_mat = Response.apellidoMaterno;
         },
         err => {
 
@@ -90,7 +91,7 @@ export class RegisterComponent implements OnInit {
         this.idpersona = data.mensaje;
         this.nombreUsuario = this.dni;
         this.Registrarusuario();
-     console.log(data);
+   
      
       },
       err => {

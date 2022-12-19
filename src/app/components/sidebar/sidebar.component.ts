@@ -13,9 +13,19 @@ export const ROUTES: RouteInfo[] = [
   { path: '/inicio', title: 'Inicio', icon: 'fa-solid fa-house'},
   { path: '/mi-organizacion-social', title: 'Mi organización social', icon: 'fa-solid fa-people-roof'},
   { path: '/generar-solicitud', title: 'Generar solicitud', icon: 'fa-solid fa-file-circle-plus'},
-  { path: '/solicitudes-rechazadas', title: 'Solicitudes rechazadas', icon: 'fa-solid fa-file-circle-xmark' },
+ 
   { path: '/requisitos', title: 'Ver requisitos', icon: 'fa-solid fa-clipboard'},
   { path: '/organizaciones-sociales', title: 'Ver organizaciones sociales', icon: 'fa-solid fa-list-check' },
+
+
+];
+export const ROUTES2: RouteInfo[] = [
+  
+ 
+  
+  { path: '/solicitudes-rechazadas', title: 'Solicitudes rechazadas', icon: 'fa-solid fa-file-circle-xmark' },
+ 
+  
   { path: '/nexpediente', title: 'Generar Nº expediente', icon: 'fa-solid fa-file-circle-plus' },
   { path: '/valisoli', title: 'Validar solicitud', icon: 'fa-solid fa-file-circle-plus' },
   { path: '/genresolucion', title: 'Generar Resolucion', icon: 'fa-solid fa-file-circle-plus' },
@@ -24,7 +34,6 @@ export const ROUTES: RouteInfo[] = [
   { path: '/mantener-parametro', title: 'Mantener Parametro', icon: 'fa-solid fa-list-check'},
 
 ];
-
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
@@ -34,6 +43,7 @@ export class SidebarComponent implements OnInit {
   roles: string[];
   isAdmin = false;
   public menuItems: any[];
+  public menuItemsadmin: any[];
   public isCollapsed = true;
 
   constructor(private router: Router,
@@ -47,6 +57,7 @@ export class SidebarComponent implements OnInit {
         this.isAdmin = true;
       }
     });
+    this.menuItemsadmin = ROUTES2.filter(menuItem => menuItem);
     this.menuItems = ROUTES.filter(menuItem => menuItem);
     this.router.events.subscribe((event) => {
       this.isCollapsed = true;

@@ -52,7 +52,5 @@ export class datosService{
 
 }
 
-public save(producto: Parametros): Observable<any> {
-  return this.httpClient.post<any>(this.url3,producto);
-}
+
 }
