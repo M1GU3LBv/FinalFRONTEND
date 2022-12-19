@@ -20,12 +20,7 @@ export const ROUTES: RouteInfo[] = [
 
 ];
 export const ROUTES2: RouteInfo[] = [
-  
- 
-  
   { path: '/solicitudes-rechazadas', title: 'Solicitudes rechazadas', icon: 'fa-solid fa-file-circle-xmark' },
- 
-  
   { path: '/nexpediente', title: 'Generar Nº expediente', icon: 'fa-solid fa-file-circle-plus' },
   { path: '/valisoli', title: 'Validar solicitud', icon: 'fa-solid fa-file-circle-plus' },
   { path: '/genresolucion', title: 'Generar Resolucion', icon: 'fa-solid fa-file-circle-plus' },
@@ -34,6 +29,18 @@ export const ROUTES2: RouteInfo[] = [
   { path: '/mantener-parametro', title: 'Mantener Parametro', icon: 'fa-solid fa-list-check'},
 
 ];
+
+export const ROUTES3: RouteInfo[] = [
+  { path: '/solicitudes-rechazadas', title: 'Solicitudes rechazadas', icon: 'fa-solid fa-file-circle-xmark' },
+  { path: '/nexpediente', title: 'Generar Nº expediente', icon: 'fa-solid fa-file-circle-plus' },
+  { path: '/valisoli', title: 'Validar solicitud', icon: 'fa-solid fa-file-circle-plus' },
+  { path: '/genresolucion', title: 'Generar Resolucion', icon: 'fa-solid fa-file-circle-plus' },
+  { path: '/asignar-roles', title: 'Roles', icon: 'fa-regular fa-address-book'},
+  { path: '/mantener-privilegio', title: 'Mantener Privilegios', icon: 'fa-solid fa-lock' },
+  { path: '/mantener-parametro', title: 'Mantener Parametro', icon: 'fa-solid fa-list-check'},
+
+];
+
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
