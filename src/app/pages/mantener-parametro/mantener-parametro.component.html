@@ -53,10 +53,10 @@
                               </tr>
                         </thead>
                         <tbody style="background-color: #cbcbcb;">
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Cargo</td>
-                                <td>Presidente(a)</td>
+                            <tr *ngFor="let todos of all">
+                                <th scope="row">{{todos.idparametros}}</th>
+                                <td>{{todos.tipoparametro}}</td>
+                                <td>{{todos.nombre}}</td>
                                 <td class="d-flex justify-content-center">
                                     <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
                                         <i class="fa-solid fa-pen m-2" style="color: black;"></i>
@@ -64,50 +64,7 @@
                                     <i class="fa-solid fa-trash-can m-2"></i>
                                 </td>
                             </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Tipo de Organización Social</td>
-                                <td>Presidente(a)</td>
-                                <td class="d-flex justify-content-center">
-                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
-                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
-                                    </a>
-                                    <i class="fa-solid fa-trash-can m-2"></i>
-                                </td>
-                            </tr> 
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Cargo</td>
-                                <td>Presidente(a)</td>
-                                <td class="d-flex justify-content-center">
-                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
-                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
-                                    </a>
-                                    <i class="fa-solid fa-trash-can m-2"></i>
-                                </td>
-                            </tr> 
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Cargo</td>
-                                <td>Presidente(a)</td>
-                                <td class="d-flex justify-content-center">
-                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
-                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
-                                    </a>
-                                    <i class="fa-solid fa-trash-can m-2"></i>
-                                </td>
-                            </tr> 
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Cargo</td>
-                                <td>Presidente(a)</td>
-                                <td class="d-flex justify-content-center">
-                                    <a class="" href="" data-toggle="modal" data-target="#ModalEditar">
-                                        <i class="fa-solid fa-pen m-2" style="color: black;"></i>
-                                    </a>
-                                    <i class="fa-solid fa-trash-can m-2"></i>
-                                </td>
-                            </tr>                                                                                 
+                                                                                                    
                         </tbody>
                     </table>
                 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { datosService } from 'src/app/service/datosSolicitud.service';
 
 @Component({
     selector: 'app-mantener-parametro',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MantenerParametroComponent implements OnInit {
-    constructor() { }
+    all: any;
+    constructor(private service : datosService) { }
 
     ngOnInit(): void {
+
+
+        this.service.all().subscribe(
+            (Response)=>{
+           
+              this.all = Response; 
+      
+             
+            })
     }
 
 }
