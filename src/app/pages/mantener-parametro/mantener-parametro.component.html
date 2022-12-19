@@ -8,9 +8,9 @@
                     <div class="card-body bg-white">
                         <div class="col-11" style="gap: 1rem;">
                             <div class="row d-flex">
-                                <div class="col-sm-12 row">
+                                <form class="col-sm-12 row" #f="ngForm" (ngSubmit)="add()" novalidate>
                                     <div class="col-sm-4 p-2">
-                                        <select class="custom-select ml--3" id="inputdropTOS">
+                                        <select class="custom-select ml--3" id="inputdropTOS" [(ngModel)]="tipoparametro">
                                             <option selected>TIPO DE PARAMETRO</option>
                                             <option value="1">CARGO</option>
                                             <option value="2">ZONA</option>
@@ -19,15 +19,15 @@
                                         </select>
                                     </div>
                                     <div class="col-sm-6 row p-2">
-                                        <input type="text"
+                                        <input type="text" [(ngModel)]="nombre" required
                                             class="form-control form-control-sm form-control-alternative col-sm-10"
                                             style="font-size: 16px;" placeholder="NOMBRE DEL PARAMETRO">
                                     </div>                                   
                                     <div class="col-sm-2 p-2">
-                                        <button type="button"
+                                        <button type="button" [disabled]="!f.valid"
                                             class="font-da btn btn-danger btn-sm col-sm-12">AGREGAR</button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>                        
                     </div>
@@ -43,7 +43,7 @@
         <div class="col-sm-12">
             <div class="card shadow">
                 <div class="table-responsive">
-                    <table class="table table-bordered">
+                    <table class="table table-bordered" >
                         <thead style="background-color: #a5a5a5; color: white;">
                             <tr>
                                 <th scope="col" class="text-center">#</th>
