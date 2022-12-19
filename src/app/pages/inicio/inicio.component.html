@@ -52,7 +52,7 @@
         </div>
       </div>
 
-      <div class="cartas3 align-items-center">
+      <div class="cartas3 align-items-center" *ngIf="isAdmin">
         <div [routerLink]="['/mantener-parametro']" class="btn card m-3 shadow procesos cartas2">
           <div class="card-body">
             <h5 class="card-title text-white letra2"><b>PARAMETROS</b>​</h5>
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <div class="cartas3 align-items-center">
+      <div class="cartas3 align-items-center" *ngIf="isAdmin">
         <div [routerLink]="['/requisitos']" class="btn card m-3 shadow procesos cartas2">
           <div class="card-body">
             <h5 class="card-title text-white letra2"><b>REQUISITOS</b>​</h5>

@@ -15,7 +15,7 @@ export class PrincipalComponent implements OnInit {
     
     this.requisitoService.requisitos().subscribe(
       (Response)=>{
-        console.log(Response[1])
+        
         this.repos = Response; 
       }
      );

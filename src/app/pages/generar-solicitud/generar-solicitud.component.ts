@@ -16,7 +16,7 @@ export class GenerarSolicitudComponent implements OnInit {
     this.service.tipo().subscribe(
       (Response)=>{
        
-        this.tipo = Response; 
+        this.tipo = Response;
 
        
        

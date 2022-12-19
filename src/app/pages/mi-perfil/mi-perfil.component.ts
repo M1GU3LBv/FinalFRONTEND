@@ -14,6 +14,8 @@ export class MiPerfilComponent implements OnInit {
   apat: any;
   email: any;
   dni: any;
+  telefono: any;
+  direccion: any;
   constructor(
     private profileservice :  Profileservice ,private tokenService: TokenService) { }
 
@@ -35,12 +37,14 @@ export class MiPerfilComponent implements OnInit {
 
   cargarperfil():void{ this.profileservice.profile().subscribe(
     (Response)=>{
-     this.nombre = Response.nombre;
-      this.apat = Response.apellido_pat;
-      this.amat = Response.apellido_mat;
-      this.email = Response.email;
-      this.dni = Response.nombreUsuario;
       
+     this.nombre = Response.persona.nombres_pers;
+      this.apat = Response.persona.apellido_pat;
+      this.amat = Response.persona.apellido_mat;
+      this.email = Response.persona.correo;
+      this.dni = Response.persona.dni;
+      this.direccion = Response.persona.direccion;
+      this.telefono = Response.persona.telefono;
     }
    );}
 }

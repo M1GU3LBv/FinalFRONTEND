@@ -47,7 +47,7 @@
                                         </select>
                                     </div>
                                     <div class="p-1">
-                                        <input type="text"
+                                        <input type="text" #dni
                                             class="form-control form-control-sm form-control-alternative "
                                             style="font-size: 16px; width: 6rem;" placeholder="DNI">
                                     </div>
@@ -57,7 +57,7 @@
                                     </div>
                                     <div class="p-1">
                                         <button type="button"
-                                            class="font-weight-bold btn btn-success btn-sm col-sm-12">AGREGAR</button>
+                                            class="font-weight-bold btn btn-success btn-sm col-sm-12" (click)="onreniec()">AGREGAR</button>
                                     </div>
                                 </div>
                             </div>
@@ -87,7 +87,10 @@
                                 <th class="text-center" scope="col">OPCIONES</th>
                             </tr>
                         </thead>
-                        <tbody style="background-color: #cbcbcb;">
+                        <tbody style="background-color: #cbcbcb;" id="sexo">
+
+
+
                             <tr>
                                 <td>PRESIDENTE(A)</td>
                                 <td>Miguel Angel</td>
@@ -102,7 +105,7 @@
                                     <i class="fa-solid fa-trash-can m-2"></i>
                                 </td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <td>VICEPRESIDENTE(A)</td>
                                 <td>Miguel Angel</td>
                                 <td>Trejo</td>
@@ -115,8 +118,8 @@
                                     </a>
                                     <i class="fa-solid fa-trash-can m-2"></i>
                                 </td>
-                            </tr>
-                            <tr>
+                            </tr> -->
+                            <!-- <tr>
                                 <td>SECRETARIO(A)</td>
                                 <td>Miguel Angel</td>
                                 <td>Trejo</td>
@@ -129,8 +132,8 @@
                                     </a>
                                     <i class="fa-solid fa-trash-can m-2"></i>
                                 </td>
-                            </tr>
-                            <tr>
+                            </tr> -->
+                            <!-- <tr>
                                 <td>TESORERO(A)</td>
                                 <td>Miguel Angel</td>
                                 <td>Trejo</td>
@@ -143,8 +146,8 @@
                                     </a>
                                     <i class="fa-solid fa-trash-can m-2"></i>
                                 </td>
-                            </tr>
-                            <tr>
+                            </tr> -->
+                            <!-- <tr>
                                 <td>VOCAL</td>
                                 <td>Miguel Angel</td>
                                 <td>Trejo</td>
@@ -157,7 +160,7 @@
                                     </a>
                                     <i class="fa-solid fa-trash-can m-2"></i>
                                 </td>
-                            </tr>
+                            </tr> -->
 
                         </tbody>
                     </table>

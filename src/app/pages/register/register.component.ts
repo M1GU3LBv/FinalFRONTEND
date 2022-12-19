@@ -7,6 +7,7 @@ import { Usuarionew } from 'src/app/models/Usuarionew';
 import { AuthService } from 'src/app/service/auth.service';
 import { Reniecservice } from 'src/app/service/reniec.service';
 import { TokenService } from 'src/app/service/token.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-register',
@@ -65,6 +66,15 @@ export class RegisterComponent implements OnInit {
          this.nombres_pers = Response.nombres;
          this.apellido_pat =Response.apellidoMaterno;
          this.apellido_mat = Response.apellidoPaterno;
+        },
+        err => {
+
+          if (err.error.message == "Not found"){ Swal.fire(
+            'DNI: '+this.personareniec.dni,
+            "No encontrado o invalido",
+            'error'
+          ) }
+          
         }
        );
        
@@ -73,7 +83,7 @@ export class RegisterComponent implements OnInit {
 
     
     this.nuevaPersona = new NuevaPersona(this.nombres_pers, this.apellido_pat, this.apellido_mat, this.dni, this.correo, this.f_nacimiento,this.telefono,this.direccion);
-   console.log(this.nuevaPersona)
+   
     this.authService.nuevo(this.nuevaPersona).subscribe(
       data => {
 
@@ -84,9 +94,18 @@ export class RegisterComponent implements OnInit {
      
       },
       err => {
-        this.errMsj = err.error.mensaje;
+        
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: err.error.mensaje,
+         
+        });
+
+
+        
        
-       console.log(err);
+       
       }
     );
 
