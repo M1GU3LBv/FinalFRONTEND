@@ -12,10 +12,10 @@
                                     <div class="col-sm-4 p-2">
                                         <select class="custom-select ml--3" id="inputdropTOS" [(ngModel)]="tipoparametro">
                                             <option selected>TIPO DE PARAMETRO</option>
-                                            <option value="1">CARGO</option>
-                                            <option value="2">ZONA</option>
-                                            <option value="3">NIVEL</option>
-                                            <option value="4">TIPO DE ORGANIZACION SOCIAL</option>                                            
+                                            <option value="cargo">CARGO</option>
+                                            <option value="zona">ZONA</option>
+                                            <option value="nivel">NIVEL</option>
+                                            <option value="tipo">TIPO DE ORGANIZACION SOCIAL</option>                                            
                                         </select>
                                     </div>
                                     <div class="col-sm-6 row p-2">
@@ -24,8 +24,9 @@
                                             style="font-size: 16px;" placeholder="NOMBRE DEL PARAMETRO">
                                     </div>                                   
                                     <div class="col-sm-2 p-2">
-                                        <button type="button" [disabled]="!f.valid"
-                                            class="font-da btn btn-danger btn-sm col-sm-12">AGREGAR</button>
+                                        <!-- <button type="button" [disabled]="!f.valid"
+                                            class="font-da btn btn-danger btn-sm col-sm-12 btn-block">AGREGAR</button> -->
+                                            <button class="btn btn-danger btn-sm col-lg-12 btn-block" [disabled]="!f.valid"><b>AGREGAR</b></button>
                                     </div>
                                 </form>
                             </div>

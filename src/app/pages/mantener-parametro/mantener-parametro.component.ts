@@ -32,16 +32,24 @@ export class MantenerParametroComponent implements OnInit {
     add(): void {
 
     
-        this.parametros = new Parametros(this.tipoparametro,this.nombre);
-        
-           this.service.add(this.parametros).subscribe(
+        const parametros = new Parametros(this.tipoparametro,this.nombre);
+        console.log(parametros)
+           this.service.save(parametros).subscribe(
              data => {
                     Swal.fire(
                     'Parametro: '+this.parametros.tipoparametro + this.parametros.nombre,
                     data.mensaje,
                     'success'
                   )
-             },
+             }, err => {
+        
+              console.log (err.message);
+      
+      
+              
+             
+             
+            }
             
            );
        
