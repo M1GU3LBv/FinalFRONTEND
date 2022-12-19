@@ -1,5 +1,4 @@
 import { Routes } from '@angular/router';
-
 import { LoginComponent } from '../../pages/login/login.component';
 import { RecupecontraComponent } from '../../pages/recupecontra/recupecontra.component';
 import { IngrecodigoComponent } from '../../pages/ingrecodigo/ingrecodigo.component';

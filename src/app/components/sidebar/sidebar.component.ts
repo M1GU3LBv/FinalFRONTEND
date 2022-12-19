@@ -10,18 +10,18 @@ declare interface RouteInfo {
 
 }
 export const ROUTES: RouteInfo[] = [
-  { path: '/inicio', title: 'Inicio', icon: 'fa-solid fa-house'},
-  { path: '/mi-organizacion-social', title: 'Mi organización social', icon: 'fa-solid fa-people-roof'},
-  { path: '/generar-solicitud', title: 'Generar solicitud', icon: 'fa-solid fa-file-circle-plus'},
+  { path: '/inicio', title: 'Inicio', icon: 'fa-solid fa-house' },
+  { path: '/mi-organizacion-social', title: 'Mi organización social', icon: 'fa-solid fa-people-roof' },
+  { path: '/generar-solicitud', title: 'Generar solicitud', icon: 'fa-solid fa-file-circle-plus' },
   { path: '/solicitudes-rechazadas', title: 'Solicitudes rechazadas', icon: 'fa-solid fa-file-circle-xmark' },
-  { path: '/requisitos', title: 'Ver requisitos', icon: 'fa-solid fa-clipboard'},
+  { path: '/requisitos', title: 'Ver requisitos', icon: 'fa-solid fa-clipboard' },
   { path: '/organizaciones-sociales', title: 'Ver organizaciones sociales', icon: 'fa-solid fa-list-check' },
   { path: '/nexpediente', title: 'Generar Nº expediente', icon: 'fa-solid fa-file-circle-plus' },
   { path: '/valisoli', title: 'Validar solicitud', icon: 'fa-solid fa-file-circle-plus' },
   { path: '/genresolucion', title: 'Generar Resolucion', icon: 'fa-solid fa-file-circle-plus' },
-  { path: '/asignar-roles', title: 'Roles', icon: 'fa-regular fa-address-book'},
+  { path: '/asignar-roles', title: 'Roles', icon: 'fa-regular fa-address-book' },
   { path: '/mantener-privilegio', title: 'Mantener Privilegios', icon: 'fa-solid fa-lock' },
-  { path: '/mantener-parametro', title: 'Mantener Parametro', icon: 'fa-solid fa-list-check'},
+  { path: '/mantener-parametro', title: 'Mantener Parametro', icon: 'fa-solid fa-list-check' },
 
 ];
 

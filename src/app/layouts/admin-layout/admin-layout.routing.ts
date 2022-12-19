@@ -1,13 +1,10 @@
 import { Routes } from '@angular/router';
-
 import { InicioComponent } from '../../pages/inicio/inicio.component';
 import { MiOrganizacionSocialComponent } from '../../pages/mi-organizacion-social/mi-organizacion-social.component';
 import { GenerarSolicitudComponent } from '../../pages/generar-solicitud/generar-solicitud.component';
-
 import { DatosdemiJuntaDirectivaComponent } from '../../pages/generar-solicitud/datos-jd/datos-jd.component';
 import { DatosdeMiembrosComponent } from 'src/app/pages/generar-solicitud/datos-miembros/datos-miembros.component';
 import { RDocumentosComponent } from 'src/app/pages/generar-solicitud/r-documentos/r-documentos.component';
-
 import { MiPerfilComponent } from '../../pages/mi-perfil/mi-perfil.component';
 import { FormPerfilComponent } from '../../pages/mi-perfil/form-perfil/form-perfil.component';
 import { RequisitosComponent } from '../../pages/requisitos/requisitos.component';
@@ -20,6 +17,10 @@ import { MantenerParametroComponent } from 'src/app/pages/mantener-parametro/man
 import { AsignarRolesComponent } from 'src/app/pages/asignar-roles/asignar-roles.component';
 import { MantenerPrivilegioComponent } from 'src/app/pages/mantener-privilegio/mantener-privilegio.component';
 import { ListarsolisComponent } from 'src/app/pages/listarsolis/listarsolis.component';
+import { SolisrechazosReComponent } from '../../pages/solicitudes-rechazadas/solisrechazos-re/solisrechazos-re.component';
+import { MosjdComponent } from '../../pages/mi-organizacion-social/mosjd/mosjd.component';
+import { MosmiembrosComponent } from '../../pages/mi-organizacion-social/mosmiembros/mosmiembros.component';
+import { MosdocumentosComponent } from '../../pages/mi-organizacion-social/mosdocumentos/mosdocumentos.component';
 
 
 export const AdminLayoutRoutes: Routes = [
@@ -28,13 +29,11 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'form-perfil', component: FormPerfilComponent },
     { path: 'mi-organizacion-social', component: MiOrganizacionSocialComponent },
     { path: 'generar-solicitud', component: GenerarSolicitudComponent },
-
     { path: 'datos-jd', component: DatosdemiJuntaDirectivaComponent },
     { path: 'datos-miembros', component: DatosdeMiembrosComponent },
     { path: 'r-documentos', component: RDocumentosComponent },
     { path: 'nexpediente', component: NexpedienteComponent },
     { path: 'valisoli', component: ValisoliComponent },
-
     { path: 'requisitos', component: RequisitosComponent },
     { path: 'organizaciones-sociales', component: OrganizacionesSocialesComponent },
     { path: 'solicitudes-rechazadas', component: SolirechazosComponent },
@@ -42,7 +41,9 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'mantener-parametro', component: MantenerParametroComponent },
     { path: 'asignar-roles', component: AsignarRolesComponent },
     { path: 'mantener-privilegio', component: MantenerPrivilegioComponent },
-    { path: 'listarsolis',          component:ListarsolisComponent},
-
-
+    { path: 'listarsolis', component: ListarsolisComponent },
+    { path: 'solisre', component: SolisrechazosReComponent },
+    { path: 'mosjd', component: MosjdComponent },
+    { path: 'mosmiembros', component: MosmiembrosComponent },
+    { path: 'mosdocumentos', component: MosdocumentosComponent },
 ];

@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthLayoutRoutes } from './auth-layout.routing';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { LoginComponent } from '../../pages/login/login.component';
 import { RecupecontraComponent } from '../../pages/recupecontra/recupecontra.component';
 import { IngrecodigoComponent } from '../../pages/ingrecodigo/ingrecodigo.component';
