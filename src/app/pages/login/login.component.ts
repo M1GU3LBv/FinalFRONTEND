@@ -17,21 +17,21 @@ export class LoginComponent implements OnInit {
   isLogged = false;
   isLoginFail = false;
   loginUsuario: LoginUsuario;
- 
+
 
   nombreUsuario: string;
   password: string;
   roles: string[] = [];
   errMsj: string;
-  constructor( 
-   
+  constructor(
+
     private tokenService: TokenService,
     private authService: AuthService,
     private router: Router,
     ) {}
 
   ngOnInit() {
-    
+
     if (this.tokenService.getToken()) {
       this.isLogged = true;
       this.isLoginFail = false;
@@ -40,10 +40,10 @@ export class LoginComponent implements OnInit {
   }
 
 
-  
+
   onLogin(): void {
 
-    
+
 
     this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
     this.authService.login(this.loginUsuario).subscribe(
@@ -54,21 +54,21 @@ export class LoginComponent implements OnInit {
         this.tokenService.setUserName(data.nombreUsuario);
         this.tokenService.setAuthorities(data.authorities);
         this.roles = data.authorities;
-        
-        this.router.navigate(['/inicio']);
+
+        this.router.navigate(['/inicio' ] );
       },
       err => {
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
           text: this.errMsj = err.error.message,
-         
+
         });
-       
+
         this.isLogged = false;
         // alert(this.errMsj = err.error.message)
-        
-        
+
+
         // console.log(err.error.message);
       }
     );
