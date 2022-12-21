@@ -1,0 +1,48 @@
+.table-responsive {
+    width: 96.5%;
+}
+
+.card {
+    border-radius: 1.2rem;
+}
+
+.letra2 {
+    font-size: 14px;
+}
+
+.bg-default {
+    background: #333333 !important;
+}
+
+.col-tabla {
+    background-color: #92d050;
+}
+
+.letra {
+    font-family: sans-serif;
+}
+
+@media screen and(max-width:991px) {
+
+    .col-lg-2 {
+        width: 96%;
+    }
+
+    .table-responsive {
+        width: 93.5%;
+    }
+
+    .row {
+        flex-wrap: none;
+    }
+
+
+}
+
+
+@media screen and(max-width:767px) {
+
+    .table-responsive {
+        width: 90%;
+    }
+}

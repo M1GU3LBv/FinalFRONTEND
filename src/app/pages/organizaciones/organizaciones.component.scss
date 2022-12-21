@@ -2,10 +2,6 @@
     font-family: sans-serif;
 }
 
-.letra2 {
-    font-size: 14px;
-}
-
 .navbar-transparent {
     z-index: 1050;
 }
@@ -43,7 +39,7 @@ footer {
     padding: 0rem 0;
 }
 
-@media screen and(max-width:950px) {
+@media screen and(max-width:991px) {
     .buscar {
         width: 30%;
     }
@@ -76,7 +72,7 @@ footer {
 
 }
 
-@media screen and(max-width:540px) {
+@media screen and(max-width:767px) {
     .buscar2 {
         width: 60%;
     }

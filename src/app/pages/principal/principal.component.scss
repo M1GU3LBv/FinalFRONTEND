@@ -1,7 +1,7 @@
 $titulo: 80px;
 $letra: 14px;
 
-.letra{
+.letra {
     font-family: sans-serif;
 }
 
@@ -210,11 +210,11 @@ img.whatsapp {
     display: none;
 }
 
-.sesionmenu{
+.sesionmenu {
     display: none;
 }
 
-.opc{
+.opc {
     color: white;
 }
 
@@ -223,143 +223,177 @@ img.whatsapp {
 }
 
 
-@media screen and(max-width:950px) {
+@media screen and(max-width:991px) {
     .section3 {
         position: relative;
         padding-top: 2rem;
         padding-bottom: 0rem;
     }
+
     .tableta {
         flex: 0 0 41.666667%;
         max-width: 41.666667%;
     }
+
     .personas2 {
         height: 380px;
     }
+
     .ruos {
         flex: 0 0 50%;
         max-width: 50%;
     }
+
     .cajafle {
         display: none;
     }
-    .cajawords{
+
+    .cajawords {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
     }
-    .cajawords2{
+
+    .cajawords2 {
         flex-basis: 0;
         flex-grow: 1;
         max-width: 100%;
     }
-    .margenesrequis{
+
+    .margenesrequis {
         margin: -0.60rem !important;
     }
+
     .titulo {
         font-size: 60px;
     }
-    .formatos{
+
+    .formatos {
         position: relative;
         width: 40%;
         padding-right: 15px;
         padding-left: 15px;
     }
+
     .footer {
         background: #f7fafc;
         padding: 0.5rem 0;
         margin-bottom: 15px;
     }
-    .hombrequees{
+
+    .hombrequees {
         height: 15rem;
     }
 
 }
 
-@media screen and(max-width:540px) {
+@media screen and(max-width:767px) {
     .tableta {
         flex: none;
         max-width: none;
     }
+
     .ruos {
         flex: none;
         max-width: none;
     }
-    .formatos{
+
+    .formatos {
         position: relative;
         width: 100%;
         padding-right: 15px;
         padding-left: 15px;
     }
+
     .titulo {
         font-size: 60px;
     }
+
     .titulocentrado {
         text-align: center !important;
     }
+
     .personas2 {
         height: 320px;
     }
+
     .jovenseñalando {
         display: none;
     }
+
     .queestop {
         margin-top: -1rem !important;
     }
+
     .imagenes {
         width: 140px;
         height: 140px;
     }
+
     .cajafle {
         display: none;
     }
+
     .mb-5 {
         margin-bottom: 0.5rem !important;
     }
+
     .jovenabajo {
         display: block;
         margin-top: 3rem;
         margin-bottom: -2.5rem;
     }
+
     .requis {
         margin-top: 0.5rem !important;
     }
+
     .word {
         margin-top: 0.5rem !important;
     }
+
     .muni {
         justify-content: center !important;
     }
+
     footer {
         padding: 1rem 0;
     }
-    .redes{
+
+    .redes {
         position: relative;
         width: 30%;
         padding-right: 5px;
         padding-left: 5px;
     }
-    .iconos{
-        justify-content: center!important;
+
+    .iconos {
+        justify-content: center !important;
     }
-    .letrafinal{
-        margin-top: 0rem!important;
+
+    .letrafinal {
+        margin-top: 0rem !important;
     }
-    .sesionmenu{
+
+    .sesionmenu {
         display: block;
     }
-    .cajawords{
+
+    .cajawords {
         flex: 0 0 66.666667%;
         max-width: 66.666667%;
     }
-    .cajawords2{
+
+    .cajawords2 {
         flex-basis: 0;
         flex-grow: 1;
         max-width: 100%;
     }
-    .margenesrequis{
+
+    .margenesrequis {
         margin: -0.60rem !important;
     }
-    .opc{
-        color:#000
+
+    .opc {
+        color: #000
     }
 }

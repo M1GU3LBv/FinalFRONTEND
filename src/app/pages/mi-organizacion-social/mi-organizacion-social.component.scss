@@ -1,0 +1,78 @@
+.card-body {
+    border-radius: 1.2rem;
+}
+
+.letra {
+    font-family: sans-serif;
+}
+
+.letra2 {
+    font-size: 14px;
+}
+
+.bg-default {
+    background: #333333 !important;
+}
+
+.mos {
+    display: flex;
+}
+
+.cajitas {
+    display: flex;
+}
+
+.mis{
+ display: flex;
+}
+
+.social{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.ml-9, .mx-9 {
+    margin-left: 12rem !important;
+}
+
+@media screen and(max-width:991px) {
+    .mos {
+        display: block;
+    }
+
+    .col-8 {
+        max-width: 100%;
+    }
+
+    .col-4 {
+        flex: 0 0 33.333333%;
+        max-width: 100%;
+    }
+    .mostrar {
+        display: flex;
+    }  
+    .but {
+        margin-top: 2.5rem!important;
+    }
+
+}
+
+@media screen and(max-width:767px) {
+    .cajitas {
+        display: block;
+    }
+    .mostrar {
+        display: block;
+    }
+    .social{
+        position: relative;
+        width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .mis{
+        display: block;
+       }
+}

@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-ingrenuevacontra',
   templateUrl: './ingrenuevacontra.component.html',
-  styleUrls: ['./ingrenuevacontra.component.css']
+  styleUrls: ['./ingrenuevacontra.component.scss']
 })
 export class IngrenuevacontraComponent implements OnInit {
 

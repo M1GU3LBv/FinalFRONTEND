@@ -1,17 +1,27 @@
-.letra {
-    font-family: sans-serif;
+hr{
+    background-color: white;
+    height: 3px;
 }
+
+.holi{
+    display: flex;
+}
+
+.modal-content {
+    border-radius: 1.2rem;
+}
+
 
 .table-responsive {
-    width: 96.7%;
-}
-
-.letra2 {
-    font-size: 14px;
+    width: 96.5%;
 }
 
 .card {
     border-radius: 1.2rem;
+}
+
+.letra2 {
+    font-size: 14px;
 }
 
 .bg-default {
@@ -27,6 +37,10 @@
 }
 
 
+.letra {
+    font-family: sans-serif;
+}
+
 @media screen and(max-width:991px) {
     .botonesmos {
         display: block;
@@ -38,13 +52,15 @@
     }
 
     .table-responsive {
-        width: 93%;
+        width: 93.5%;
     }
 
     .row {
         flex-wrap: none;
     }
-
+    .holi{
+        display: block;
+    }
 
 }
 
@@ -52,6 +68,6 @@
 @media screen and(max-width:767px) {
 
     .table-responsive {
-        width: 90.5%;
+        width: 90%;
     }
 }

@@ -7,6 +7,7 @@ import { RegisterComponent } from '../../pages/register/register.component';
 import { PrincipalComponent } from '../../pages/principal/principal.component';
 import { OrganizacionesComponent } from '../../pages/organizaciones/organizaciones.component';
 import { AdminmuestraComponent } from '../../pages/adminmuestra/adminmuestra.component';
+import { ProdGuardService as guard } from 'src/app/guards/prod-guard.service';
 
 
 export const AuthLayoutRoutes: Routes = [
@@ -17,6 +18,6 @@ export const AuthLayoutRoutes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'principal', component: PrincipalComponent },
     { path: 'organizaciones', component: OrganizacionesComponent },
-    { path: 'ventanaadmin', component: AdminmuestraComponent },
+    { path: 'ventanaadmin', component: AdminmuestraComponent,canActivate: [guard], data: { expectedRol: ['admin'] }  },
 
 ];

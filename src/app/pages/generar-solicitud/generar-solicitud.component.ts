@@ -3,7 +3,7 @@ import { datosService } from 'src/app/service/datosSolicitud.service';
 @Component({
   selector: 'app-generar-solicitud',
   templateUrl: './generar-solicitud.component.html',
-  styleUrls: ['./generar-solicitud.component.css']
+  styleUrls: ['./generar-solicitud.component.scss']
 })
 export class GenerarSolicitudComponent implements OnInit {
   tipo: any;

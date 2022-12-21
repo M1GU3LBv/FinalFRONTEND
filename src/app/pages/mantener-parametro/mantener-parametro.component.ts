@@ -6,7 +6,7 @@ import Swal from 'sweetalert2';
 @Component({
     selector: 'app-mantener-parametro',
     templateUrl: './mantener-parametro.component.html',
-    styleUrls: ['./mantener-parametro.component.css'],
+    styleUrls: ['./mantener-parametro.component.scss'],
 })
 
 export class MantenerParametroComponent implements OnInit {

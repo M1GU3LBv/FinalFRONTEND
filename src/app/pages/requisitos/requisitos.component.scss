@@ -1,3 +1,18 @@
+
+
+.hola {
+    margin-top: -3rem !important;
+}
+
+hr{
+    background-color: white;
+    height: 3px;
+}
+
+.modal-content {
+    border-radius: 1.2rem;
+}
+
 .table-responsive {
     width: 96.5%;
 }
@@ -9,8 +24,8 @@
 .letra2 {
     font-size: 14px;
 }
-
-.bg-default {
+ 
+.bg-default{
     background: #333333 !important;
 }
 
@@ -18,20 +33,11 @@
     background-color: #92d050;
 }
 
-.botonesmos {
-    display: flex;
-}
-
-
 .letra {
     font-family: sans-serif;
 }
 
 @media screen and(max-width:991px) {
-    .botonesmos {
-        display: block;
-        margin: 1.5rem;
-    }
 
     .col-lg-2 {
         width: 96%;
@@ -54,4 +60,8 @@
     .table-responsive {
         width: 90%;
     }
+    .hola {
+        margin-top: 0rem !important;
+    }
+    
 }

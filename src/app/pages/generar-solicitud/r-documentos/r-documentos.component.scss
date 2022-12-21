@@ -1,13 +1,10 @@
-.letra {
-    font-family: sans-serif;
+.hola {
+    margin-top: -3rem !important;
 }
 
-.table-responsive {
-    width: 96.7%;
-}
-
-.letra2 {
-    font-size: 14px;
+hr{
+    background-color: white;
+    height: 3px;
 }
 
 .card {
@@ -18,14 +15,17 @@
     background: #333333 !important;
 }
 
-.col-tabla {
-    background-color: #92d050;
-}
-
 .botonesmos {
     display: flex;
 }
 
+.letra2 {
+    font-size: 14px;
+}
+
+.letra {
+    font-family: sans-serif;
+}
 
 @media screen and(max-width:991px) {
     .botonesmos {
@@ -38,7 +38,7 @@
     }
 
     .table-responsive {
-        width: 93%;
+        width: 93.5%;
     }
 
     .row {
@@ -48,10 +48,8 @@
 
 }
 
-
 @media screen and(max-width:767px) {
-
-    .table-responsive {
-        width: 90.5%;
+    .caja {
+        margin-top: 1.5rem;
     }
 }

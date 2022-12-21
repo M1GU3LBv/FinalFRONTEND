@@ -2,18 +2,19 @@
     background: #333333 !important;
 }
 
-.card{
+.card {
     border-radius: 1.2rem;
 }
 
-.cartas{
+.cartas {
     width: 30%;
 }
 
-.cartas2{
+.cartas2 {
     width: 30%;
 }
-.cartas3{
+
+.cartas3 {
     display: flex;
 }
 
@@ -21,33 +22,37 @@
     background-color: #333333 !important;
 }
 
-.imagenes{
+.imagenes {
     width: 8rem;
 }
 
 
-@media screen and(max-width:950px) {
-    .cartas2{
+@media screen and(max-width:991px) {
+    .cartas2 {
         width: 90%;
     }
-    .cartas{
+
+    .cartas {
         width: 50%;
     }
 }
 
-@media screen and(max-width:540px) {
-    .cartas2{
+@media screen and(max-width:767px) {
+    .cartas2 {
         width: 90%;
     }
-    .cartas3{
+
+    .cartas3 {
         display: grid;
     }
-    .cartas{
-    width: 58%;
-}
-.imagenes{
-    width: 10.5rem;
-}
+
+    .cartas {
+        width: 58%;
+    }
+
+    .imagenes {
+        width: 10.5rem;
+    }
 
 
 }

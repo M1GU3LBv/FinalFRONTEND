@@ -7,7 +7,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 @Component({
   selector: 'app-datos-jd',
   templateUrl: './datos-jd.component.html',
-  styleUrls: ['./datos-jd.component.css']
+  styleUrls: ['./datos-jd.component.scss']
 })
 export class DatosdemiJuntaDirectivaComponent implements OnInit{
   personareniec: any;

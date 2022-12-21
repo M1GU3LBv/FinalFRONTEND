@@ -1,90 +1,77 @@
-<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
-  style="min-height: 250px; background-image: url(https://munichaclacayo.gob.pe/portals/slider/imagenes/1.jpg); background-size: cover; background-position: center top;">
-</div>
-<div class="letra container-fluid mt--8 mb-5">
-  <div class="card shadow" style="width: 100%;">
+<div class="letra container-fluid mt-5 mb-5 d-flex justify-content-center">
+  <div class="card shadow cartag">
     <div class="card-body text-center">
-      <h1 class="card-title text-success"><b>RUOS-MC</b></h1>
-      <h6 class="card-subtitle mb-2 text-success"><b>Registro Único de Organizaciones Sociales de la Municipalidad de
+      <h1 class="card-title text-success font-weight-bold"><b>RUOS-MC</b></h1>
+      <h6 class="card-subtitle mb-2 text-success font-weight-bold"><b>Registro Único de Organizaciones Sociales de la
+          Municipalidad de
           Chaclacayo</b>​</h6>
-      <p class="card-text letra2">Bienvenido(a), Cristian Antony Lara Arcos​</p>
-
-      <div class="cartas3 align-items-center">
-        <div [routerLink]="['/generar-solicitud']" class="btn card m-3 shadow procesos cartas2">
-          <div class="card-body">
-            <h5 class="card-title text-white letra2"><b>REGISTRAR ORGANIZACIÓN SOCIAL</b>​</h5>
-            <img src="./assets/img/landing/nuevoregistro.png" style="width:10rem">
+      <p class="card-text letra2 font-weight-bold mt-3"> Bienvenido(a), Cristian Antony Lara Arcos </p>
+          <div class="cartas3 align-items-center">
+            <div [routerLink]="['/generar-solicitud']" class="btn card m-3 shadow procesos cartas2">
+              <div class="card-body">
+                <h5 class="card-title text-white letra2"><b>REGISTRAR ORGANIZACIÓN SOCIAL</b>​</h5>
+                <img src="./assets/img/landing/nuevoregistro.png" style="width:10rem">
+              </div>
+            </div>
+            <div [routerLink]="['/generar-solicitud']" class="btn card m-3 shadow procesos cartas2">
+              <div class="card-body">
+                <h5 class="card-title text-white letra2"><b>ACTUALIZAR ORGANIZACIÓN SOCIAL</b>​</h5>
+                <img src="./assets/img/landing/actualizarregistro.png" style="width:6.8rem">
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div [routerLink]="['/generar-solicitud']" class="btn card m-3 shadow procesos cartas2">
-          <div class="card-body">
-            <h5 class="card-title text-white letra2"><b>ACTUALIZAR ORGANIZACIÓN SOCIAL</b>​</h5>
-            <img src="./assets/img/landing/actualizarregistro.png" style="width:6.8rem">
+          <div class="d-flex justify-content-center">
+            <div [routerLink]="['/nexpediente']" class="btn card m-3 shadow procesos cartas">
+              <div class="card-body">
+                <h5 class="card-title text-white letra2"><b>GENERAR N° DE EXPEDIENTE​</b></h5>
+                <img src="./assets/img/landing/expediente.png" style="width:7rem">
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-center">
-        <div [routerLink]="['/nexpediente']" class="btn card m-3 shadow procesos cartas">
-          <div class="card-body">
-            <h5 class="card-title text-white letra2"><b>GENERAR N° DE EXPEDIENTE​</b></h5>
-            <img src="./assets/img/landing/expediente.png" style="width:7rem">
+          <div class="d-flex justify-content-center">
+            <div [routerLink]="['/valisoli']" class="btn card m-3 shadow procesos cartas">
+              <div class="card-body">
+                <h5 class="card-title text-white letra2"><b>VALIDAR SOLICITUDES​</b></h5>
+                <img src="./assets/img/landing/validar_resoluc.png" style="width:10rem">
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-center">
-        <div [routerLink]="['/valisoli']" class="btn card m-3 shadow procesos cartas">
-          <div class="card-body">
-            <h5 class="card-title text-white letra2"><b>VALIDAR SOLICITUDES​</b></h5>
-            <img src="./assets/img/landing/validar_resoluc.png" style="width:10rem">
+          <div class="d-flex justify-content-center">
+            <div [routerLink]="['/genresolucion']" class="btn card m-3 shadow procesos cartas">
+              <div class="card-body">
+                <h5 class="card-title text-white letra2"><b>GENERAR RESOLUCIÓN​</b></h5>
+                <img src="./assets/img/landing/validar_resoluc.png" style="width:10rem">
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="d-flex justify-content-center">
-        <div [routerLink]="['/genresolucion']" class="btn card m-3 shadow procesos cartas">
-          <div class="card-body">
-            <h5 class="card-title text-white letra2"><b>GENERAR RESOLUCIÓN​</b></h5>
-            <img src="./assets/img/landing/validar_resoluc.png" style="width:10rem">
+          <div class="cartas3 align-items-center" *ngIf="isAdmin">
+            <div [routerLink]="['/mantener-parametro']" class="btn card m-3 shadow procesos cartas2">
+              <div class="card-body">
+                <h5 class="card-title text-white letra2"><b>PARAMETROS</b>​</h5>
+                <img src="./assets/img/landing/parametro.png" style="width:8.5rem" class="m--4">
+              </div>
+            </div>
+            <div [routerLink]="['/mantener-privilegio']" class="btn card m-3 shadow procesos cartas2">
+              <div class="card-body m--2">
+                <h5 class="card-title text-white letra2"><b>PRIVILEGIOS</b>​</h5>
+                <img src="./assets/img/landing/privilegios.png" style="width:7rem">
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="cartas3 align-items-center" *ngIf="isAdmin">
-        <div [routerLink]="['/mantener-parametro']" class="btn card m-3 shadow procesos cartas2">
-          <div class="card-body">
-            <h5 class="card-title text-white letra2"><b>PARAMETROS</b>​</h5>
-            <img src="./assets/img/landing/parametro.png" style="width:10rem">
+          <div class="cartas3 align-items-center" *ngIf="isAdmin">
+            <div [routerLink]="['/requisitos']" class="btn card m-3 shadow procesos cartas2">
+              <div class="card-body">
+                <h5 class="card-title text-white letra2"><b>REQUISITOS</b>​</h5>
+                <img src="./assets/img/landing/requisito.png" style="width:7rem" class="m--2">
+              </div>
+            </div>
+            <div [routerLink]="['/asignar-roles']" class="btn card m-3 shadow procesos cartas2">
+              <div class="card-body">
+                <h5 class="card-title text-white letra2"><b>ROLES</b>​</h5>
+                <img src="./assets/img/landing/roles.png" style="width:7rem" class="m--2">
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div [routerLink]="['/mantener-privilegio']" class="btn card m-3 shadow procesos cartas2">
-          <div class="card-body">
-            <h5 class="card-title text-white letra2"><b>PRIVILEGIOS</b>​</h5>
-            <img class="m-3" src="./assets/img/landing/privilegios.png" style="width:8.6rem">
-
-          </div>
-        </div>
-      </div>
-
-      <div class="cartas3 align-items-center" *ngIf="isAdmin">
-        <div [routerLink]="['/requisitos']" class="btn card m-3 shadow procesos cartas2">
-          <div class="card-body">
-            <h5 class="card-title text-white letra2"><b>REQUISITOS</b>​</h5>
-            <img src="./assets/img/landing/requisito.png" style="width:9rem">
-          </div>
-        </div>
-
-        <div [routerLink]="['/asignar-roles']" class="btn card m-3 shadow procesos cartas2">
-          <div class="card-body">
-            <h5 class="card-title text-white letra2"><b>ROLES</b>​</h5>
-            <img src="./assets/img/landing/roles.png" style="width:9rem">
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </div>

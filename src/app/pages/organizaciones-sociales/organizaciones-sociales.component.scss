@@ -31,6 +31,18 @@
     padding: 0.1rem 1rem;
 }
 
+.bg-default{
+    background: #333333 !important;
+}
+
+.col-tabla {
+    background-color: #92d050;
+}
+
+.card {
+    border-radius: 1.2rem;
+}
+
 .opc {
     color: white;
 }
@@ -43,7 +55,7 @@ footer {
     padding: 0rem 0;
 }
 
-@media screen and(max-width:950px) {
+@media screen and(max-width:991px) {
     .buscar {
         width: 30%;
     }
@@ -76,7 +88,7 @@ footer {
 
 }
 
-@media screen and(max-width:540px) {
+@media screen and(max-width:767px) {
     .buscar2 {
         width: 60%;
     }

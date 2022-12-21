@@ -1,4 +1,5 @@
-<div class="letra d-flex justify-content-center align-items-center" style="width: auto;height: 120vh; background-image: url(https://munichaclacayo.gob.pe/portals/slider/imagenes/3.jpg); background-size: cover; background-position: center center;">
+<div class="letra d-flex justify-content-center align-items-center"
+  style="width: auto;height: 120vh; background-image: url(https://munichaclacayo.gob.pe/portals/slider/imagenes/3.jpg); background-size: cover; background-position: center center;">
   <div class="card shadow" style="width: 25rem;">
     <form class="m-4" #f="ngForm" (ngSubmit)="onRegister()" novalidate>
       <div class="align-items-center d-flex justify-content-center">
@@ -6,44 +7,44 @@
       </div>
       <div class="row g-2 mt-2">
         <div class="col-md-5">
-          <form class="form"    role="form">
+          <form class="form" role="form">
             <label for="floatingInput"><b> DNI:</b></label>
             <!-- <input [(ngModel)]="nombreUsuario" #myNameElem type="text" class="form-control form-control-sm" placeholder="DNI"  name="nombreUsuario" id="nombreUsuario" required minlength="8" maxlength="8">  -->
-            <input type="text" name="nombreUsuario" id="nombreUsuario" class="form-control form-control-sm"
-            [(ngModel)]="dni" required placeholder="DNI" #myNameElem>
-            
-            <button class="btn btn-outline-success mt-2"  (click)="onreniec()"><i class="fa-solid fa-check"></i></button>
+          <div class="d-flex">
+              <input type="text" name="nombreUsuario" id="nombreUsuario" class="form-control form-control-sm"
+                [(ngModel)]="dni" required placeholder="" #myNameElem>
+              <button class="ml-1 btn-sm btn btn-outline-success " (click)="onreniec()"><i class="fa-solid fa-check"></i></button>
+          </div>
           </form>
-          
         </div>
-      
         <div class="col-md">
           <div class="">
             <label for="floatingInput"><b> Nombre:</b></label>
-            <div type="text" class="form-control form-control-sm" disabled  name="nombre" id="nombre"> {{nombres_pers}}</div>
+            <div type="text" class="form-control form-control-sm" disabled name="nombre" id="nombre"> {{nombres_pers}}
+            </div>
           </div>
         </div>
-      </div> 
+      </div>
       <div class="row g-2 mt-2">
         <div class="col-md">
           <div class="">
             <label for="floatingInput"><b> Apellido paterno:</b></label>
-            <div type="text"  class="form-control form-control-sm"  disabled>{{apellido_pat}}</div>
+            <div type="text" class="form-control form-control-sm" disabled>{{apellido_pat}}</div>
           </div>
         </div>
         <div class="col-md">
           <div class="">
             <label for="floatingInput"><b> Apellido materno:</b></label>
-            <div  type="text" class="form-control form-control-sm" disabled>{{apellido_mat}}</div>
+            <div type="text" class="form-control form-control-sm" disabled>{{apellido_mat}}</div>
           </div>
         </div>
       </div>
-    
       <div class="row g-2 mt-2">
         <div class="col-md">
           <div class="">
             <label for="floatingInput"><b> Correo electrónico:</b></label>
-            <input [(ngModel)]="correo" type="email" name="email" id="email" class="form-control form-control-sm" placeholder="Correo electrónico" required>
+            <input [(ngModel)]="correo" type="email" name="email" id="email" class="form-control form-control-sm"
+              placeholder="Correo electrónico" required>
           </div>
         </div>
       </div>
@@ -51,13 +52,14 @@
         <div class="col-md-7">
           <div class="">
             <label for="floatingInput"><b> Fecha de nacimiento:</b></label>
-            <input [(ngModel)]="f_nacimiento" type="date" class="form-control form-control-sm" placeholder="Fecha de nacimiento" >
+            <input [(ngModel)]="f_nacimiento" type="date" class="form-control form-control-sm"
+              placeholder="Fecha de nacimiento">
           </div>
         </div>
         <div class="col-md">
           <div class="">
             <label for="floatingInput"><b> Teléfono:</b></label>
-            <input [(ngModel)]="telefono" type="text" class="form-control form-control-sm"  placeholder="Teléfono" >
+            <input [(ngModel)]="telefono" type="text" class="form-control form-control-sm" placeholder="Teléfono">
           </div>
         </div>
       </div>
@@ -65,7 +67,7 @@
         <div class="col-md">
           <div class="">
             <label for="floatingInput"><b> Dirección:</b></label>
-            <input [(ngModel)]="direccion" type="text" class="form-control form-control-sm" placeholder="Dirección" >
+            <input [(ngModel)]="direccion" type="text" class="form-control form-control-sm" placeholder="Dirección">
           </div>
         </div>
       </div>
@@ -73,8 +75,8 @@
         <div class="col-md">
           <div class="">
             <label for="floatingInput"><b> Contraseña:</b></label>
-            <input type="password" name="password" id="password" class="form-control"
-                [(ngModel)]="password" required placeholder="contraseña">
+            <input type="password" name="password" id="password" class="form-control" [(ngModel)]="password" required
+              placeholder="contraseña">
           </div>
         </div>
       </div>
@@ -88,7 +90,8 @@
       </div> -->
       <div class="d-grid gap-2 mt-3">
         <button class="btn btn-success btn-sm col-lg-12 btn-block" [disabled]="!f.valid"><b>REGISTRATE</b></button>
-        <button [routerLink]="['/login']" type="button" class="btn btn-warning btn-sm text-white col-lg-12 mt-2"><b>INICIE SESIÓN</b></button>
+        <button [routerLink]="['/login']" type="button"
+          class="btn btn-warning btn-sm text-white col-lg-12 mt-2"><b>INICIE SESIÓN</b></button>
       </div>
     </form>
   </div>

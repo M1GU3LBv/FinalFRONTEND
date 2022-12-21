@@ -4,7 +4,7 @@ import { Profileservice } from "src/app/service/profile.service";
 @Component({
   selector: 'app-mi-perfil',
   templateUrl: './mi-perfil.component.html',
-  styleUrls: ['./mi-perfil.component.css']
+  styleUrls: ['./mi-perfil.component.scss']
 })
 export class MiPerfilComponent implements OnInit {
   nombre : string;
